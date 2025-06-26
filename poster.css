@@ -1,0 +1,102 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+}
+
+
+.top {
+  height: 50vh;
+  background-color: #FFFADC;
+  position: relative;
+  overflow: visible; 
+  padding-right: 80px; 
+}
+
+
+.bottom {
+  height: 50vh;
+  background-color: #B8CFCE;
+}
+
+
+.flower {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  object-fit: contain;
+}
+
+
+.image {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 3;
+}
+
+.image img {
+  width: 50px;
+  height: 50px;
+}
+
+h2 {
+  color: brown;
+  font-variant: small-caps;
+  margin: 0;
+  line-height: 1.1;
+}
+
+
+.motivation {
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  text-align: center;  /* center the text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;  /* space between image and h1 */
+}
+
+.motivation img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  display: block;
+}
+
+.motivation h1 {
+  margin: 0;
+  color: brown;
+  font-variant: small-caps;
+  font-size: 2rem;
+  text-decoration: line-through;
+}
+.social{
+  display: flex;
+  gap: 10px;
+}
+.social img{
+  height: 20px;
+  width: 20px;
+
+}
